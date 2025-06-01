@@ -243,7 +243,7 @@ const Contact = () => {
                   <FaEnvelope className="text-blue-700 mt-1 mr-4 text-xl" />
                   <div>
                     <h4 className="font-medium text-gray-900">E-mail</h4>
-                    <p className="text-gray-700">contato@istech.com.br</p>
+                    <p className="text-gray-700">contato@istech.tech</p>
                   </div>
                 </div>
               </div>
