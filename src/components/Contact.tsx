@@ -111,7 +111,7 @@ const Contact = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/5548988802642?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ISTECH', '_blank');
+    window.open('https://wa.me/554888371549?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ISTECH', '_blank');
   };
 
   return (

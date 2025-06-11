@@ -32,7 +32,7 @@ function App() {
       
       {/* WhatsApp Floating Button - Material UI Style */}
       <a 
-        href="https://wa.me/5548988802642?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ISTECH"
+        href="https://wa.me/554888371549?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20ISTECH"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 z-50 flex items-center justify-center"
