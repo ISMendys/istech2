@@ -4,18 +4,35 @@ import Services from './components/Services';
 import Partnership from './components/Partnership';
 import Innovation from './components/Innovation';
 import Contact from './components/Contact';
+import { Routes, Route, Link } from 'react-router-dom';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+
+const HomePage = () => (
+  <>
+    <Hero />
+    <Services />
+    <Partnership />
+    <Innovation />
+    <Contact />
+  </>
+);
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
-      <Services />
-      <Partnership />
-      <Innovation />
-      <Contact />
       
-      {/* Footer */}
+      {/* O conteúdo principal agora é gerenciado pelas rotas */}
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/termos-de-uso" element={<TermsOfService />} />
+        </Routes>
+      </main>
+      
+      {/* Footer (agora com o Link correto) */}
       <footer className="bg-blue-900 text-white py-8">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -23,8 +40,9 @@ function App() {
               <p>&copy; {new Date().getFullYear()} ISTECH. Todos os direitos reservados.</p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-300 transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-blue-300 transition-colors">Termos de Uso</a>
+              {/* TROQUE <a> por <Link> */}
+              <Link to="/politica-de-privacidade" className="hover:text-blue-300 transition-colors">Política de Privacidade BJJE</Link>
+              <Link to="/termos-de-uso" className="hover:text-blue-300 transition-colors">Termos de Uso BJJE</Link>
             </div>
           </div>
         </div>
