@@ -48,3 +48,7 @@ export default tseslint.config({
   },
 })
 ```
+COMANDO PARA SUBIR AS ALTERAÇÕES
+yarn dev
+yarn prebuildy
+yarn deploy

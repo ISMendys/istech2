@@ -47,6 +47,8 @@ function App() {
               {/* TROQUE <a> por <Link> */}
               <Link to="/politica-de-privacidade" className="hover:text-blue-300 transition-colors">Política de Privacidade BJJE</Link>
               <Link to="/termos-de-uso" className="hover:text-blue-300 transition-colors">Termos de Uso BJJE</Link>
+              <Link to="/politica-de-privacidade-produtos-perigosos" className="hover:text-blue-300 transition-colors">Política de Privacidade Produtos Perigosos</Link>
+              <Link to="/termos-de-uso-produtos-perigosos" className="hover:text-blue-300 transition-colors">Termos de Uso Produtos Perigosos</Link>
             </div>
           </div>
         </div>
