@@ -5,8 +5,10 @@ import Partnership from './components/Partnership';
 import Innovation from './components/Innovation';
 import Contact from './components/Contact';
 import { Routes, Route, Link } from 'react-router-dom';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicyBJJ';
+import TermsOfService from './pages/TermsOfServiceBJJ';
+import PrivacyPolicyDangerProducts from './pages/PrivacyPolicyDangerousGoods';
+import TermsOfServiceDangerProducts from './pages/TermsOfServiceDangerProducts';
 
 const HomePage = () => (
   <>
@@ -29,6 +31,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
           <Route path="/termos-de-uso" element={<TermsOfService />} />
+          <Route path="/politica-de-privacidade-produtos-perigosos" element={<PrivacyPolicyDangerProducts />} />
+          <Route path="/termos-de-uso-produtos-perigosos" element={<TermsOfServiceDangerProducts />} />
         </Routes>
       </main>
       
